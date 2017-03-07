@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><title>Buildr 1.1</title>
+
+<meta name="description" content="Build some stuff in my crap incremental game, and it's upgraded to 1.1">
+<meta name="author" content="Mac Graham (Midrim Inc.)">
+<link rel="stylesheet" href="css/screen.css?v=0.1">
+<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0">
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+
+	<body>
+<h1 style="height: 35px;">Buildr- Endless Incremental Game</h1>
+<div id="info"> <span id="money">Buildings :
+<span class="infoValue">0.00</span>B</span><br>
+<span id="moneyPerSec">Buildings per second : <span class="infoValue">0.00</span>B</span> </div>
+<div id="main">
+<div id="actions">
+<h2 style="height: 14px;">Actions</h2>
+<input id="moneyButton" onclick="dollars.click();" value="Build a Building" type="button"><br>
+<span style="text-decoration: underline; font-weight: bold; font-family: Arial;"></span><br>
+</div>
+<div id="upgrades">
+<h2>Upgrades</h2>
+<input id="upgrade-0" onclick="upgrades.buy(0);" disabled="true" value="Buildr 20b(+1bps)" type="button">
+<input id="upgrade-1" onclick="upgrades.buy(1);" disabled="true" value="SuperBuildr 95b(+5bps)" type="button"> <input id="upgrade-2" onclick="upgrades.buy(2);" disabled="true" value="RoboBuildr 200b(+50bps)(" type="button"> <input id="upgrade-3" onclick="upgrades.buy(3);" disabled="true" value="Constructr 750b(+100bps)" type="button"> <input id="upgrade-4" onclick="upgrades.buy(4);" disabled="true" value="SuperConstructr 1000b(+200bps)" type="button"><span style="text-decoration: underline; font-weight: bold; font-family: Arial;"></span></div>
+</div>
+<script type="application/javascript" src="js/main.js?v=0.1"></script>
+
+</body></html>
